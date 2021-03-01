@@ -2,5 +2,61 @@ body,
 html {
 	margin: 0;
 	padding: 0;
-	background: #34495e
+	background: #34495e;
+	min-height: 100vh;
+	display: grid;
+	place-items: center center;
+	box-sizing: border-box;
+}
+
+form {
+	display: grid;
+	place-items: center center;
+	background: #202020;
+	padding: 5rem;
+	width: 20rem;
+}
+
+form h1 {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .5rem
+}
+
+input[type="text"],
+input[type="password"] {
+	margin: 1.2rem 0;
+	border: 3px solid #3598db;
+	background: none;
+	text-align: center;
+	outline: none;
+	padding: 1rem .7rem;
+	width: 13rem;
+	color: #fff;
+	border-radius: 1.5rem;
+	transition: .4s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	width: 18rem;
+	border-color: #2ecc71
+}
+
+input[type="submit"] {
+	margin: 1.2rem 0;
+	border: 3px solid #2ecc71;
+	background: none;
+	text-align: center;
+	outline: none;
+	padding: 1rem .7rem;
+	width: 7rem;
+	color: #fff;
+	border-radius: 1.5rem;
+	cursor: pointer;
+	transition: .4s;
+}
+
+input[type="submit"]:hover {
+	background: #2ecc71
 }
